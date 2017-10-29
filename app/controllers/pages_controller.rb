@@ -9,5 +9,6 @@ class PagesController < ApplicationController
 
   def lizards
     @lizard =  Emoji.find_by_alias("lizard").raw
+    @lizard_num = params[:number].to_i
   end
 end
