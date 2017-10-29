@@ -8,6 +8,6 @@ class PagesController < ApplicationController
   end
 
   def lizards
-    
+    @lizard =  Emoji.find_by_alias("lizard").raw
   end
 end
