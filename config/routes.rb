@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   get 'about_us', to: 'pages#about', as: 'about'
 
   get 'lizard/:number', to: 'pages#lizards', as:'lizards'
+
+  get 'coffee_blends', to: 'coffee_blends#index', as: 'coffee_blends'
+  
+    get 'coffee_blend/:number', to: 'coffee_blends#coffee', as:'coffee_blend'
   
   root to: 'pages#home', as: 'root'
 
