@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'coffee_blends/index'
+
+  get 'coffee_blends/coffee'
+
   get 'home', to: 'pages#home', as: 'home'
 
   get 'about_us', to: 'pages#about', as: 'about'

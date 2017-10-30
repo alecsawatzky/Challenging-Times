@@ -1,0 +1,2 @@
+module CoffeeBlendsHelper
+end
